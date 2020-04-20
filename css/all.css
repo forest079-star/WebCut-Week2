@@ -234,10 +234,15 @@ section.brand ul.tShirt li:first-child {
   margin-bottom: 4rem;
 }
 
+section.brand ul.tShirt li:nth-child(2) {
+  margin-bottom: 4rem;
+}
+
 @media screen and (min-width: 768px) {
   section.brand ul.tShirt li:nth-child(2) {
     width: calc(50% - 1.2rem);
     margin-right: 2.4rem;
+    margin-bottom: 0rem;
   }
   section.brand ul.tShirt li:nth-child(3) {
     width: calc(50% - 1.2rem);
