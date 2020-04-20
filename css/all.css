@@ -194,7 +194,7 @@ section.about ul li:before {
   position: absolute;
   width: 22px;
   height: 22px;
-  top: 10px;
+  top: 1rem;
   border-radius: 50%;
   background-color: #891818;
   margin-left: -3.7rem;
@@ -205,5 +205,42 @@ section.brand {
   color: #FFFFFF;
   padding-top: 6.4rem;
   padding-bottom: 16rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+section.brand p {
+  margin-bottom: 3.2rem;
+}
+
+section.brand ul {
+  margin-bottom: 4.8rem;
+}
+
+section.brand li {
+  font-size: 2rem;
+  line-height: 4.2rem;
+}
+
+section.brand ul.tShirt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+section.brand ul.tShirt li:first-child {
+  margin-bottom: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  section.brand ul.tShirt li:nth-child(2) {
+    width: calc(50% - 1.2rem);
+    margin-right: 2.4rem;
+  }
+  section.brand ul.tShirt li:nth-child(3) {
+    width: calc(50% - 1.2rem);
+  }
 }
 /*# sourceMappingURL=all.css.map */

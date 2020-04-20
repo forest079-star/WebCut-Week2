@@ -138,7 +138,7 @@ section.about {
         position: absolute;
         width: 22px;
         height: 22px;
-        top: 10px;
+        top: 1rem;
         border-radius: 50%;
         background-color: $primaryColor;
         margin-left: -3.7rem;
@@ -153,4 +153,46 @@ section.brand{
   color:$textSecondary;
   padding-top: 6.4rem;
   padding-bottom: 16rem;
+  text-align: center;
+  font-weight: 500;
+  p{
+    margin-bottom: 3.2rem;
+  }
+
+  ul{
+    margin-bottom: 4.8rem;
+  }
+  li{
+    font-size: 2rem;
+    line-height: 4.2rem;
+    
+    
+  }
+
+  ul.tShirt{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    li{
+     
+      &:first-child{
+        margin-bottom: 4rem;
+      }
+      &:nth-child(2){
+        
+      }
+      @include sm{
+        &:nth-child(2){
+          width: calc(50% - 1.2rem);
+          margin-right: 2.4rem;
+        }
+        &:nth-child(3){
+          width: calc(50% - 1.2rem);
+        }
+      }
+    }
+    
+  }
 }
